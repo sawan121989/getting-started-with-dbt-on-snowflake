@@ -12,7 +12,7 @@ tasty_bytes:
     prod:
       type: snowflake
       account: ''
-      user: ''
+      user: 'sawansabbu'
       role: accountadmin
       database: tasty_bytes_dbt_db
       schema: prod
@@ -24,7 +24,7 @@ elementary:
     dev:
       type: snowflake
       account: ''
-      user: ''
+      user: 'sawansabbu'
       role: accountadmin
       database: tasty_bytes_dbt_db
       schema: elementary

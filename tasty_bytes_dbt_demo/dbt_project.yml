@@ -23,3 +23,6 @@ models:
       +materialized: view
     marts:
       +materialized: table
+    features:
+      +database: snowflake_learning_db
+      +schema: public
