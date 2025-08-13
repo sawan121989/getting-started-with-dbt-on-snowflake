@@ -1,0 +1,9 @@
+version: 2
+
+models:
+    - name: raw_customer_customer_loyalty
+      tests:
+        - tst_validate_counts:
+            source_table: CUSTOMER_LOYALTY
+            target_table: raw_customer_customer_loyalty
+
