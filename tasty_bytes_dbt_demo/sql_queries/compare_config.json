@@ -1,0 +1,18 @@
+{
+  "raw_customer_customer_loyalty":
+    {
+      "source_table": "raw_sales",
+      "target_table": "clean_sales",
+      "group_columns": ["region", "product_id"],
+      "measure_columns": ["sales_amount", "units_sold"],
+      "date_column": "order_date"
+    },
+  "inventory_checks": [
+    {
+      "source_table": "raw_inventory",
+      "target_table": "clean_inventory",
+      "group_columns": ["warehouse_id", "sku"],
+      "measure_columns": ["stock_qty", "reserved_qty"]
+    }
+  ]
+}

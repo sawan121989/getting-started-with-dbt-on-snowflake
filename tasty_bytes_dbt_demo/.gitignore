@@ -1,0 +1,13 @@
+####python environments
+.venv/
+.env/
+
+###packages and logs
+dbt_packages/
+edr_target/
+logs/
+examples/
+target/
+
+###creds
+profiles.yml
