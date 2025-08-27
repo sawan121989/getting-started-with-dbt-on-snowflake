@@ -3,24 +3,12 @@ version: 2
 models:
     - name: raw_customer_customer_loyalty
       tests:
-        - validate_src_tgt_cnt:
+        - validate_src_tgt_aggregation_v2:
             arguments:
-              source_table: tasty_bytes_dbt_db.raw.CUSTOMER_LOYALTY
-              target_table: tasty_bytes_dbt_db.dev.raw_customer_customer_loyalty
-              date_column: sign_up_date
+              test_id: 101
               start_dt: '2022-06-01'
               end_dt: '2022-07-01'
-        - validate_src_tgt_aggregation:
-            arguments:
-              source_table: tasty_bytes_dbt_db.raw.CUSTOMER_LOYALTY
-              target_table: tasty_bytes_dbt_db.dev.raw_customer_customer_loyalty
-              group_columns: country
-              tgt_group_columns: country
-              measure_columns: customer_id
-              tgt_measure_columns: customer_id
-              date_column: sign_up_date
-              start_dt: '2022-06-01'
-              end_dt: '2022-07-01'
+            
 
        
 

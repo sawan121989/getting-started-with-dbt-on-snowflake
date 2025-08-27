@@ -3,37 +3,41 @@ tasty_bytes:
   outputs:
     dev:
       type: snowflake
-      account: ''
-      user: ''
+      account: 'ztkmtmf-em20652'
+      user: 'sawansabbu'
       role: accountadmin
       database: tasty_bytes_dbt_db
       schema: dev
       warehouse: tasty_bytes_dbt_wh
+      password: BloodSucker_@12
     prod:
       type: snowflake
-      account: ''
+      account: 'ztkmtmf-em20652'
       user: 'sawansabbu'
       role: accountadmin
       database: tasty_bytes_dbt_db
       schema: prod
       warehouse: tasty_bytes_dbt_wh
+      password: BloodSucker_@12
 
 elementary:
   target: dev
   outputs:
     dev:
       type: snowflake
-      account: ''
+      account: 'ztkmtmf-em20652'
       user: 'sawansabbu'
       role: accountadmin
       database: tasty_bytes_dbt_db
-      schema: elementary
+      schema: dev
       warehouse: tasty_bytes_dbt_wh
+      password: BloodSucker_@12
     prod:
       type: snowflake
-      account: ''
-      user: ''
+      account: 'ztkmtmf-em20652'
+      user: 'sawansabbu'
       role: accountadmin
       database: tasty_bytes_dbt_db
-      schema: elementary_prod
+      schema: dev
       warehouse: tasty_bytes_dbt_wh
+      password: BloodSucker_@12
